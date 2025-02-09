@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Assign Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Admin - Assign Tasks</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Submit Task</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="task-assignment">
+            <h2>Assign a Task</h2>
+            <form id="assignTaskForm">
+                <label for="assignee">Assignee:</label>
+                <input type="text" id="assignee" name="assignee" required>
+                
+                <label for="newTask">Task:</label>
+                <input type="text" id="newTask" name="newTask" required>
+                
+                <button type="submit">Assign</button>
+            </form>
+            <div id="assignedTaskList">
+                <h3>Assigned Tasks</h3>
+                <ul id="assignedTasks">
+                    <!-- Assigned tasks will be added here by JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Submission</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Task Submission</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Submit Task</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="task-submission">
+            <h2>Submit Your Task</h2>
+            <form id="taskForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="task">Task Completed:</label>
+                <input type="text" id="task" name="task" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="taskList">
+                <h3>Completed Tasks</h3>
+                <ul id="tasks">
+                    <!-- Tasks will be added here by JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Submission</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
